@@ -1,0 +1,16 @@
+{
+  "name": "Maquettes_Ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile:scss" :  "node-sass style.scss style.css "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
