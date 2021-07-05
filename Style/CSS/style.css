@@ -1,0 +1,108 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #f6f6f6; }
+
+* a {
+  text-decoration: none;
+  color: white; }
+
+.Bloc_page {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.header {
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%; }
+  .header__logo {
+    font-family: 'Shrikhand', cursive;
+    margin: 0;
+    color: black; }
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f3f3;
+  color: #7a7a7a; }
+  .localisation__city {
+    margin-left: 13px;
+    font-weight: 400; }
+
+.Reserver {
+  background: #fafafa;
+  width: 100%; }
+  .Reserver__container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0; }
+  .Reserver__titre {
+    text-align: center;
+    margin: auto; }
+  .Reserver__paragraphe {
+    text-align: center;
+    margin: 20px 20px; }
+  .Reserver__boutton {
+    opacity: 1;
+    background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+    color: white;
+    padding: 40 20px;
+    border-radius: 200px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    height: 3.6em;
+    width: 17em;
+    font-weight: bold; }
+    .Reserver__bouttonhover {
+      opacity: 1;
+      transition: .6s;
+      box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.6);
+      cursor: pointer; }
+
+.footer {
+  width: 100%;
+  background-color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer__bloc {
+    display: inline;
+    padding: 0 40px;
+    width: 100%;
+    max-width: 1200px; }
+    .footer__bloc .logo {
+      font-family: 'Shrikhand', cursive;
+      color: white;
+      font-size: 20px;
+      padding: 15px 0; }
+    .footer__bloc-links {
+      display: inline-flex;
+      flex-direction: column;
+      width: auto; }
+    .footer__bloc-link {
+      display: inline-flex;
+      align-items: center;
+      flex-direction: row;
+      text-align: center;
+      color: white;
+      height: 30px;
+      cursor: pointer; }
+      .footer__bloc-linkhover .footer__bloc-link__title {
+        text-decoration: underline; }
+      .footer__bloc-link i {
+        margin-right: 7px; }
+      .footer__bloc-link__title {
+        font-size: 16px;
+        font-weight: 400; }
