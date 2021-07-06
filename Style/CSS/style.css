@@ -87,10 +87,20 @@ body {
       color: white;
       font-size: 20px;
       padding: 15px 0; }
+      @media (min-width: 500px) {
+        .footer__bloc .logo {
+          text-align: center; } }
     .footer__bloc-links {
       display: inline-flex;
       flex-direction: column;
       width: auto; }
+      @media (min-width: 500px) {
+        .footer__bloc-links {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          max-width: 900px;
+          margin: auto; } }
     .footer__bloc-link {
       display: inline-flex;
       align-items: center;
@@ -99,10 +109,145 @@ body {
       color: white;
       height: 30px;
       cursor: pointer; }
-      .footer__bloc-linkhover .footer__bloc-link__title {
+      .footer__bloc-linkhover .footer__bloc-link__titre {
         text-decoration: underline; }
       .footer__bloc-link i {
         margin-right: 7px; }
-      .footer__bloc-link__title {
+      .footer__bloc-link__titre {
         font-size: 16px;
         font-weight: 400; }
+
+.Bloc_Menu__contenaire {
+  padding: 25px 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.Bloc_Menu {
+  width: 95%;
+  max-width: 1200px;
+  background-color: white;
+  padding: 0;
+  display: flex;
+  flex-direction: column; }
+  .Bloc_Menu__titre {
+    margin: 0; }
+  .Bloc_Menu__Bloc2 {
+    display: flex;
+    align-items: center;
+    background: #f6f6f6;
+    height: auto;
+    width: auto;
+    margin: 10px 20px;
+    border-radius: 20px;
+    position: n relative;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16); }
+    .Bloc_Menu__Bloc2hover {
+      opacity: 1;
+      transition: .6s;
+      box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.6);
+      background: white; }
+  .Bloc_Menu__nombre {
+    background-color: #9356DC;
+    color: white;
+    position: absolute;
+    padding: 3px 8px 3px 8px;
+    border-radius: 500px;
+    transform: translateX(-50%); }
+  .Bloc_Menu__icon {
+    color: #7E7E7E;
+    margin: 0 20px; }
+  .Bloc_Menu__Bloc1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+
+.restaurants {
+  margin: 0;
+  background: #f6f6f6;
+  padding: 20px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.restaurant__cards {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px; }
+
+.restaurant__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  border-radius: 20px;
+  transform: scale(1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); }
+  .restaurant__card-new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: #99e2d0;
+    top: 20px;
+    right: 20px; }
+    .restaurant__card-new p {
+      color: #1b6150;
+      padding: 10px 20px;
+      margin: 0; }
+  .restaurant__cardhover {
+    transition: .5s;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px 2px rgba(147, 86, 220, 0.6); }
+  .restaurant__card-image {
+    width: 100%;
+    height: 190px; }
+    .restaurant__card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px 20px 0 0; }
+
+.restaurant__block {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  border-radius: 0 0 20px 20px; }
+  .restaurant__block-info {
+    color: black;
+    margin-left: 20px; }
+    .restaurant__block-info first-child {
+      font-weight: 700; }
+  .restaurant__block-hearth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    width: 30px; }
+  .restaurant__block .heart {
+    width: 30px;
+    stroke-width: 30;
+    stroke: black;
+    fill: white;
+    cursor: pointer; }
+  .restaurant__block .heart-full {
+    position: absolute;
+    fill: url(#text-fill);
+    stroke: none; }
+  .restaurant__block .heart-empty {
+    width: 50px;
+    position: relative; }
+    .restaurant__block .heart-emptyhover {
+      opacity: 0;
+      transition: 0.5s; }

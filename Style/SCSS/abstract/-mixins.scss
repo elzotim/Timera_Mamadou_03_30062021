@@ -20,9 +20,16 @@
     box-shadow : 0px 0px 10px 0px rgba(0,0,0,0.3);  
 }
 
-@mixin responsive {
+@mixin responsive_tablette {
     @media(
-        max-width: 800px){
+        min-width: 500px){
+        @content;
+    }
+    
+}
+@mixin responsive_Desktop {
+    @media(
+        min-width: 800px){
         @content;
     }
     
