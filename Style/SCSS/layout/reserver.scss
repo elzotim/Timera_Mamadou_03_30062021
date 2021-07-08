@@ -32,7 +32,7 @@
         height :3.6em;
         width :17em;
         font-weight : bold; 
-        
+        cursor: pointer;
         &hover {
             @include boutton-hover;
             cursor: pointer;

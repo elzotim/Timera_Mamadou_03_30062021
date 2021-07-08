@@ -1,9 +1,13 @@
+
 .Bloc_Menu__contenaire {
     padding  : 25px 0;
     width  : 100%;
     background  : white;
     @include centrer_element;
     flex-direction  : column;
+    @include responsive_Desktop{
+        flex: 1;
+    }
 }
 .Bloc_Menu {
     width  : 95%;
@@ -52,19 +56,26 @@
 .restaurants {
     margin :0;
     background :#f6f6f6;
-    padding :20px;
+    padding :25px 0;;
     max-width: 1200px;
-    @include centrer_element;
     flex-direction :column;
+    @include centrer_element;
+    @include responsive_Desktop{
+        flex: 3;
+    }
 }
 
 .restaurant {
-    &__cards {
+    &__carte {
         display  : grid;
         grid-template-rows :  repeat(4,1fr) ;
-
         grid-gap  : 20px;
-        padding  : 20px;
+        padding: 25px 0;
+        @include responsive_Desktop{
+            grid-template-rows: repeat(2 ,1fr);
+            grid-template-columns :  repeat(2,1fr) ;
+
+        }
         
     }
     &__card {
@@ -149,3 +160,11 @@
 }
 
 
+.le__tout{
+    @include responsive_Desktop{
+    display :flex;
+    flex-direction : row;
+    justify-content : space-between;
+    width: 100%;
+    }
+}

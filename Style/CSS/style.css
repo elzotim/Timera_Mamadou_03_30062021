@@ -64,7 +64,8 @@ body {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
     height: 3.6em;
     width: 17em;
-    font-weight: bold; }
+    font-weight: bold;
+    cursor: pointer; }
     .Reserver__bouttonhover {
       opacity: 1;
       transition: .6s;
@@ -125,6 +126,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+  @media (min-width: 800px) {
+    .Bloc_Menu__contenaire {
+      flex: 1; } }
 
 .Bloc_Menu {
   width: 95%;
@@ -168,18 +172,25 @@ body {
 .restaurants {
   margin: 0;
   background: #f6f6f6;
-  padding: 20px;
+  padding: 25px 0;
   max-width: 1200px;
+  flex-direction: column;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column; }
+  align-items: center; }
+  @media (min-width: 800px) {
+    .restaurants {
+      flex: 3; } }
 
-.restaurant__cards {
+.restaurant__carte {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 20px;
-  padding: 20px; }
+  padding: 25px 0; }
+  @media (min-width: 800px) {
+    .restaurant__carte {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr); } }
 
 .restaurant__card {
   position: relative;
@@ -251,3 +262,10 @@ body {
     .restaurant__block .heart-emptyhover {
       opacity: 0;
       transition: 0.5s; }
+
+@media (min-width: 800px) {
+  .le__tout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; } }
