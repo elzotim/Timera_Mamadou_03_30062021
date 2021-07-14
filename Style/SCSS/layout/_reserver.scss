@@ -2,6 +2,7 @@
     @include centrer_element();
     background : #f3f3f3;
     color : #7a7a7a;
+    width: 100%;
 
     &__city {
         margin-left : 13px;
@@ -33,6 +34,7 @@
         width :17em;
         font-weight : bold; 
         cursor: pointer;
+        border: none;
         &hover {
             @include boutton-hover;
             cursor: pointer;

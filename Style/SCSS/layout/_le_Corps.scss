@@ -134,29 +134,23 @@
         &-hearth {
             @include centrer_element;
             margin-right : 20px;
-            width : 30px;
+            width :auto;
+            background-clip: content-box;;
         }
-        .heart {
-            width : 30px;
-            stroke-width : 30;
-            stroke : black;
-            fill : white;
-            cursor : pointer;
+       .fa-heart{
+            align-content: center;
+            color:black;
+            cursor: pointer;
+            text-align: center;
+            font-size: 25px;
+            background-clip: content-box;
           }
-          .heart-full {
-          position : absolute;
-          fill :url(#text-fill);
-          stroke : none;
-        }
-        .heart-empty {
-            width:  50px;
-            position : relative; 
-            &hover {
-              opacity : 0;
-              transition : 0.5s;
-            }
-        }
-    }
+          .fa-heart:hover {
+          opacity: 1;
+          background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+          transition : 0.5s; 
+          background-clip: content-box;
+       }   }
 }
 
 

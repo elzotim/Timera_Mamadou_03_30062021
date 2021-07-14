@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "compile:scss" :  "node-sass Style/SCSS/style.scss Style/CSS/style.css "
+    "compile:scss" :  "node-sass Style/SCSS/style.scss Style/CSS/style.css w"
   },
   "keywords": [],
   "author": "",

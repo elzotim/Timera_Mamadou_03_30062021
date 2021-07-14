@@ -1,18 +1,19 @@
-@import "abstract/-mixins.scss";
-@import "abstract/-variable.scss";
+@import "abstract/_mixins.scss";
+@import "abstract/_variable.scss";
 
 
 
-@import "base/-base.scss";
-@import "base/-typographie.scss";
+@import "base/_base.scss";
+@import "base/_typographie.scss";
 
-@import "pages/-accueille.scss";
-
-
-@import "component/bouton.scss";
+@import "pages/_accueille.scss";
+@import "pages/_pagesDemenu.scss";
 
 
-@import "layout/-header.scss";
-@import "layout/reserver.scss";
-@import "layout/footer.scss";
-@import "layout/le_Corps.scss"
+@import "component/_bouton.scss";
+
+
+@import "layout/_header.scss";
+@import "layout/_reserver.scss";
+@import "layout/_footer.scss";
+@import "layout/_le_Corps.scss"
