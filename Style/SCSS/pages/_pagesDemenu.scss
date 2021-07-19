@@ -89,13 +89,13 @@
         text-transform: uppercase; }
         .menu__entre__titre h3::before {
           content: '';
-          width: 100px;
+          width: 11%;
           height: 4px;
           background: #99e2d0;
           position: absolute;
           z-index: 20;
           left: 0px;
-          bottom: -18px; }
+          top: 27px; }
       .menu__entre__case {
         position: relative;
         cursor: pointer;

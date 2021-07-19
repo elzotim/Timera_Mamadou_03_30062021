@@ -29,7 +29,14 @@
 }
 @mixin responsive_Desktop {
     @media(
-        min-width: 800px){
+        min-width: 900px){
+        @content;
+    }
+    
+}
+@mixin responsive_tablete {
+    @media(
+        min-width: 600px){
         @content;
     }
     

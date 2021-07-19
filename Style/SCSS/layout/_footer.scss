@@ -13,9 +13,7 @@
             color:  white;
             font-size : 20px;
             padding : 15px 0;
-            @include responsive_tablette{
-                text-align: center;
-        }
+           
     }
         &-links {
             display:inline-flex;
