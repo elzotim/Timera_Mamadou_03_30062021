@@ -214,31 +214,31 @@ body {
   animation: opacity 1s both; }
 
 #case-1 {
-  animation-delay: 01s; }
+  animation-delay: 0.1s; }
 
 #case-2 {
-  animation-delay: 02s; }
+  animation-delay: 0.5s; }
 
 #case-3 {
-  animation-delay: 03s; }
+  animation-delay: 1s; }
 
 #case-4 {
-  animation-delay: 04s; }
+  animation-delay: 1.5s; }
 
 #case-5 {
-  animation-delay: 05s; }
+  animation-delay: 2s; }
 
 #case-6 {
-  animation-delay: 06s; }
+  animation-delay: 2.5s; }
 
 #case-7 {
-  animation-delay: 07s; }
+  animation-delay: 3s; }
 
 #case-8 {
-  animation-delay: 08s; }
+  animation-delay: 3.5s; }
 
 #case-9 {
-  animation-delay: 09s; }
+  animation-delay: 04s; }
 
 @media screen and (min-width: 1100px) {
   .menu {
@@ -327,28 +327,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .footer__bloc {
+  .footer .footer__bloc {
     display: inline;
     padding: 0 40px;
     width: 100%;
     max-width: 1200px; }
-    .footer__bloc .logo {
+    .footer .footer__bloc .logo {
       font-family: 'Shrikhand', cursive;
       color: white;
       font-size: 20px;
       padding: 15px 0; }
-    .footer__bloc-links {
+    .footer .footer__bloc-links {
       display: inline-flex;
       flex-direction: column;
       width: auto; }
       @media (min-width: 500px) {
-        .footer__bloc-links {
+        .footer .footer__bloc-links {
           display: flex;
           justify-content: space-between;
           flex-direction: row;
           max-width: 900px;
           margin: auto; } }
-    .footer__bloc-link {
+    .footer .footer__bloc-link {
       display: inline-flex;
       align-items: center;
       flex-direction: row;
@@ -356,13 +356,17 @@ body {
       color: white;
       height: 30px;
       cursor: pointer; }
-      .footer__bloc-linkhover .footer__bloc-link__titre {
+      .footer .footer__bloc-linkhover .footer__bloc-link__titre {
         text-decoration: underline; }
-      .footer__bloc-link i {
+      .footer .footer__bloc-link i {
         margin-right: 7px; }
-      .footer__bloc-link__titre {
+      .footer .footer__bloc-link__titre {
         font-size: 16px;
-        font-weight: 400; }
+        font-weight: 400;
+        margin: 6px; }
+
+#footer__bloc-link__titres {
+  margin-left: 12px; }
 
 .Bloc_Menu__contenaire {
   padding: 25px 0;
@@ -449,17 +453,18 @@ body {
   border-radius: 20px;
   transform: scale(1);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); }
-  .restaurant__card-new {
+  .restaurant__card-nouveau {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     background: #99e2d0;
     top: 20px;
-    right: 20px; }
-    .restaurant__card-new p {
+    right: 20px;
+    border-radius: 3px; }
+    .restaurant__card-nouveau p {
       color: #1b6150;
-      padding: 10px 20px;
+      padding: 7px 10px;
       margin: 0; }
   .restaurant__cardhover {
     transition: .5s;

@@ -3,12 +3,12 @@
     width:  100%;
     background-color : #353535;
     @include centrer_element;
-    &__bloc {
+    & &__bloc {
         display : inline;
         padding : 0 40px;
         width:  100%;
         max-width:  1200px;
-        & .logo {
+    & .logo {
             font-family:  'Shrikhand', cursive;
             color:  white;
             font-size : 20px;
@@ -44,9 +44,13 @@
             &__titre {
                 font-size : 16px;
                 font-weight : 400;
+                margin: 6px;
             }
         }
     }
     
     
+}
+#footer__bloc-link__titres{
+    margin-left: 12px;
 }
