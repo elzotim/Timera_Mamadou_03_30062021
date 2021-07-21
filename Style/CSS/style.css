@@ -13,15 +13,15 @@ body {
   margin: 0 auto;
   display: block; }
 
-.chargement {
-  border: 10px solid #f3f3f3;
+.fa-spinner {
   height: 100px;
   width: 100px;
-  border-top: 10px  solid #2c3e50;
-  border-bottom: 10px  solid #e74c3c;
+  z-index: 1000;
+  position: fixed;
   border-radius: 50%;
   margin: auto;
-  position: absolute;
+  color: #9356DC;
+  font-size: 80px;
   -webkit-animation: spin 1.5s linear infinite;
   -o-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
@@ -41,6 +41,38 @@ body {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+
+.spinner {
+  height: 100%;
+  background: white;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  -webkit-animation: spinner 2s linear;
+  animation: spinner 2s linear;
+  visibility: hidden; }
+
+@keyframes spinner {
+  0% {
+    visibility: visible;
+    opacity: 0.9; }
+  70% {
+    opacity: 0.9; }
+  100% {
+    opacity: 0;
+    visibility: hidden; }
+  0% {
+    visibility: visible;
+    opacity: 0.9; }
+  70% {
+    opacity: 0.9; }
+  100% {
+    opacity: 0;
+    visibility: hidden; } }
 
 /*les coeur des fichier html */
 .headers1 {
@@ -428,9 +460,8 @@ body {
     margin: 10px 20px;
     border-radius: 20px;
     position: relative;
-    padding: 13px 0 13px 0;
-    box-shadow: 0px 0px 7px 6px rgba(226, 223, 223, 0.66); }
-    .Bloc_Menu__Bloc2hover {
+    padding: 13px 0 13px 0; }
+    .Bloc_Menu__Bloc2 :hover {
       opacity: 1;
       transition: .6s;
       box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.6);
