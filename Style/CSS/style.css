@@ -13,6 +13,35 @@ body {
   margin: 0 auto;
   display: block; }
 
+.chargement {
+  border: 10px solid #f3f3f3;
+  height: 100px;
+  width: 100px;
+  border-top: 10px  solid #2c3e50;
+  border-bottom: 10px  solid #e74c3c;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  -webkit-animation: spin 1.5s linear infinite;
+  -o-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 /*les coeur des fichier html */
 .headers1 {
   z-index: 1;
@@ -468,10 +497,6 @@ body {
       color: #1b6150;
       padding: 7px 10px;
       margin: 0; }
-  .restaurant__card :hover {
-    transition: .5s;
-    transform: scale(1.02);
-    box-shadow: 0px 0px 10px 2px rgba(147, 86, 220, 0.6); }
   .restaurant__card-image {
     width: 100%;
     height: 190px; }
