@@ -2,7 +2,7 @@
     box-shadow  : 0px 5px 6px 0px rgba(0,0,0,0.20);
     position  : relative;
     @include centrer_element();
-    height  : 64px;
+    height  : 75px;
     width  : 100%;
     @include responsive_Desktop{
         height  :80px;
@@ -12,6 +12,6 @@
         margin : 0;
         color  : black;
         display: block ;
-        max-width: 30%;
+        max-width: 50%;
     }
 }
