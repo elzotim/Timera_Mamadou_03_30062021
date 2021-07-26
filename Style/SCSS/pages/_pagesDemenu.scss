@@ -135,6 +135,9 @@ header {
               @include flexbox-center;
               animation: slide-left 0.5s ease ;
               transform-origin: right;
+              display: flex;
+              margin-right: 0rem;
+              
           }
           
           &:hover .menu__case__price {
@@ -142,13 +145,13 @@ header {
               transition: 0.5s ease ;
           }
           .validation__box {
-              display: none;
-              position: absolute;
+            @include flexbox-center;
               background: $color-tertiary;
               border-radius: 0 15px 15px 0;
-              right: 0px;
-              padding: 0 13px;
+              padding: 0 24px;
               height: 100%;
+              transition-duration: .5s;
+              margin: -1rem -5rem -1rem 1rem;
               i {
                   font-size:20px;
                   color: white;
@@ -202,6 +205,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items:flex-end;
+  overflow: hidden;
 }
 
 
@@ -233,28 +237,33 @@ header {
   }
 }
 
-.appears-with-opacity {
+.Aparition-avec-opacite {
     animation: opacity 1s both;
 }
 
 #case-1 {
   animation-delay: 0.1s;
+  margin-top: 10px;
 }
 
 #case-2 {
   animation-delay: 0.2s;
+  margin-top: 10px;
 }
 
 #case-3 {
   animation-delay: 0.3s;
+  margin-top: 10px;
 }
 
 #case-4 {
   animation-delay: 0.4s;
+  margin-top: 10px;
 }
 
 #case-5 {
   animation-delay: 0.5s;
+  margin-top: 10px;
 }
 
 #case-6 {

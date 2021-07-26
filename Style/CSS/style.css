@@ -42,7 +42,7 @@ body {
   100% {
     transform: rotate(360deg); } }
 
-.spinner {
+.Le_Spinner {
   height: 100%;
   background: white;
   margin: auto;
@@ -188,18 +188,22 @@ header {
         justify-content: center;
         align-items: center;
         animation: slide-left 0.5s ease;
-        transform-origin: right; }
+        transform-origin: right;
+        display: flex;
+        margin-right: 0rem; }
       .menu__grid__case:hover .menu__case__price {
         padding-right: 70px;
         transition: 0.5s ease; }
       .menu__grid__case .validation__box {
-        display: none;
-        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: #99E2D0;
         border-radius: 0 15px 15px 0;
-        right: 0px;
-        padding: 0 13px;
-        height: 100%; }
+        padding: 0 24px;
+        height: 100%;
+        transition-duration: .5s;
+        margin: -1rem -5rem -1rem 1rem; }
         .menu__grid__case .validation__box i {
           font-size: 20px;
           color: white;
@@ -244,7 +248,8 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end; }
+  align-items: flex-end;
+  overflow: hidden; }
 
 @keyframes rotate {
   0% {
@@ -264,23 +269,28 @@ header {
   100% {
     opacity: 1; } }
 
-.appears-with-opacity {
+.Aparition-avec-opacite {
   animation: opacity 1s both; }
 
 #case-1 {
-  animation-delay: 0.1s; }
+  animation-delay: 0.1s;
+  margin-top: 10px; }
 
 #case-2 {
-  animation-delay: 0.2s; }
+  animation-delay: 0.2s;
+  margin-top: 10px; }
 
 #case-3 {
-  animation-delay: 0.3s; }
+  animation-delay: 0.3s;
+  margin-top: 10px; }
 
 #case-4 {
-  animation-delay: 0.4s; }
+  animation-delay: 0.4s;
+  margin-top: 10px; }
 
 #case-5 {
-  animation-delay: 0.5s; }
+  animation-delay: 0.5s;
+  margin-top: 10px; }
 
 #case-6 {
   animation-delay: 0.6s; }
