@@ -185,19 +185,8 @@ header {
           padding-left: 7px;
       }
   }
-  &__contain-button {
-      @include flexbox-center;
-      width: 100%;
-  }
-  &__button {
-      @include button-style;
-      padding: 10px 20px;
-      margin: 50px 0;
-      font-size: 18px;
-      &:hover {
-          @include button-hover;
-      }
-  }
+  
+
 }
 
 .dish-and-price {
@@ -228,58 +217,56 @@ header {
 }
 
 
+.Aparition-avec-opacite {
+  animation: opacity 1s both;
+}
 @keyframes opacity {
   0% {
             opacity: 0;
+            transform: translateY(10px);
+          
   }
   100% {
             opacity: 1;
   }
 }
 
-.Aparition-avec-opacite {
-    animation: opacity 1s both;
-}
 
 #case-1 {
-  animation-delay: 0.1s;
-  margin-top: 10px;
+  animation-delay: 0.5s;
 }
 
 #case-2 {
-  animation-delay: 0.2s;
-  margin-top: 10px;
+  animation-delay: 1s;
 }
 
 #case-3 {
-  animation-delay: 0.3s;
-  margin-top: 10px;
+  animation-delay: 1.5s;
 }
 
 #case-4 {
-  animation-delay: 0.4s;
-  margin-top: 10px;
+  animation-delay: 2s;
 }
 
 #case-5 {
-  animation-delay: 0.5s;
-  margin-top: 10px;
+  animation-delay: 2.5s;
 }
 
 #case-6 {
-  animation-delay: 0.6s;
+  animation-delay: 3s;
 }
 
 #case-7 {
-  animation-delay: 0.7s;
+  animation-delay:3.5s;
 }
 
 #case-8 {
-  animation-delay: 0.8s;
+  animation-delay: 4s;
 }
 
 #case-9 {
-  animation-delay: 0.9s;
+  animation-delay: 4.5s;
+
 }
 
 .footer {

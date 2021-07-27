@@ -223,26 +223,6 @@ header {
     padding-right: 20px;
     font-weight: bold;
     padding-left: 7px; }
-  .menu__contain-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; }
-  .menu__button {
-    opacity: 1;
-    background: linear-gradient(180deg, #f70c90db 0%, #9b51f3 100%);
-    color: white;
-    padding: 40 20px;
-    border-radius: 200px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-    padding: 10px 20px;
-    margin: 50px 0;
-    font-size: 18px; }
-    .menu__button:hover {
-      opacity: 0.8;
-      cursor: pointer;
-      transition: .3s;
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6); }
 
 .dish-and-price {
   width: 100%;
@@ -263,46 +243,42 @@ header {
   100% {
     transform: scaleX(-50px); } }
 
-@keyframes opacity {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
 .Aparition-avec-opacite {
   animation: opacity 1s both; }
 
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); }
+  100% {
+    opacity: 1; } }
+
 #case-1 {
-  animation-delay: 0.1s;
-  margin-top: 10px; }
+  animation-delay: 0.5s; }
 
 #case-2 {
-  animation-delay: 0.2s;
-  margin-top: 10px; }
+  animation-delay: 1s; }
 
 #case-3 {
-  animation-delay: 0.3s;
-  margin-top: 10px; }
+  animation-delay: 1.5s; }
 
 #case-4 {
-  animation-delay: 0.4s;
-  margin-top: 10px; }
+  animation-delay: 2s; }
 
 #case-5 {
-  animation-delay: 0.5s;
-  margin-top: 10px; }
+  animation-delay: 2.5s; }
 
 #case-6 {
-  animation-delay: 0.6s; }
+  animation-delay: 3s; }
 
 #case-7 {
-  animation-delay: 0.7s; }
+  animation-delay: 3.5s; }
 
 #case-8 {
-  animation-delay: 0.8s; }
+  animation-delay: 4s; }
 
 #case-9 {
-  animation-delay: 0.9s; }
+  animation-delay: 4.5s; }
 
 .footer {
   width: 100%;
@@ -357,22 +333,6 @@ header {
       flex-direction: row;
       max-width: 900px; } }
 
-/*.Reserver__boutton {
-    opacity: 1;
-    background: linear-gradient(180deg, $color-secondary 0%, $color-primary 100%);
-    color: white;
-    border-radius: 200px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-    height: 3.6em;
-    min-width: 10em;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-}
-.Reserver__boutton :hover {
-    @include boutton-hover;
-    cursor: pointer;
-}*/
 .le__boutton {
   display: block;
   margin: auto;
@@ -381,7 +341,6 @@ header {
   color: white;
   border-radius: 200px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-  padding: 17px 25px;
   font-size: 18px;
   border: none;
   width: max-content; }
@@ -391,6 +350,16 @@ header {
   transition: 2s;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
   cursor: pointer; }
+
+.button {
+  margin: 60px auto 98px auto;
+  padding: 18px 60px; }
+
+.buttonMenu {
+  padding: 18px 32px; }
+  @media (min-width: 900px) {
+    .buttonMenu {
+      margin: auto; } }
 
 .header {
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
@@ -500,7 +469,8 @@ header {
   flex-direction: column; }
   @media (min-width: 900px) {
     .Bloc_Menu__contenaire {
-      flex: 1; } }
+      flex: 1;
+      justify-content: flex-start; } }
 
 .Bloc_Menu {
   width: 95%;
@@ -508,6 +478,9 @@ header {
   padding: 0;
   display: flex;
   flex-direction: column; }
+  @media (min-width: 900px) {
+    .Bloc_Menu {
+      margin: -20px 8px 26px 10px; } }
   .Bloc_Menu__titre {
     margin: 26px 0px 26px 10px; }
   .Bloc_Menu__Bloc2 {
@@ -536,14 +509,14 @@ header {
     flex-direction: column; }
 
 #Bloc_Menu__Bloc {
-  background: linear-gradient(180deg, #f6f6f6 0%, #d9a0cfad 100%); }
+  background: #edd0e8ad; }
 
 #Bloc_Menu__icon {
   color: #9356DC; }
 
 .restaurants {
   background: #f6f6f6;
-  padding: 20px;
+  padding: 20px 20px 70px 20px;
   margin: 9px 0; }
   @media (min-width: 900px) {
     .restaurants {
@@ -568,7 +541,8 @@ header {
   width: 100%;
   border-radius: 20px;
   transform: scale(1);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0px 7px 10px 0px rgba(154, 153, 153, 0.36);
+  overflow: hidden; }
   .restaurant__card-nouveau {
     display: flex;
     justify-content: center;
