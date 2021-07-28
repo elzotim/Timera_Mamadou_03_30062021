@@ -495,7 +495,8 @@ header {
     margin: 10px 20px;
     border-radius: 20px;
     position: relative;
-    padding: 20px 0; }
+    padding: 20px 0;
+    box-shadow: 1px 5px 10px 3px #bebcbc; }
   .Bloc_Menu__nombre {
     background-color: #9356DC;
     color: white;
