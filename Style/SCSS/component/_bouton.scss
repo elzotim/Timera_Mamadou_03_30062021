@@ -15,6 +15,7 @@
     .le__boutton:hover {
       @include boutton-hover;
       cursor: pointer;
+      opacity: 0.7;
      }
 .button{
     margin: 60px auto 98px auto;
