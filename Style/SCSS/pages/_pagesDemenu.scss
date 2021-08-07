@@ -129,7 +129,7 @@ header {
       border-radius: 15px;
       background-color: white;
       box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
-      &:hover .validation__box {
+      &:hover .validation__du__box {
         @include flexbox-center;
         animation: slide-left 0.5s ease;
         transform-origin: right;
@@ -140,7 +140,7 @@ header {
       &:hover .menu__case__price {
         transition: 0.5s ease;
       }
-      .validation__box {
+      .validation__du__box {
         @include flexbox-center;
         background: $color-tertiary;
         border-radius: 0 15px 15px 0;

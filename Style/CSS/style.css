@@ -182,7 +182,7 @@ header {
       border-radius: 15px;
       background-color: white;
       box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1); }
-      .menu__grid__case:hover .validation__box {
+      .menu__grid__case:hover .validation__du__box {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -192,7 +192,7 @@ header {
         margin-right: 0rem; }
       .menu__grid__case:hover .menu__case__price {
         transition: 0.5s ease; }
-      .menu__grid__case .validation__box {
+      .menu__grid__case .validation__du__box {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -202,7 +202,7 @@ header {
         height: 100%;
         transition-duration: 0.5s;
         margin: -1rem -5rem -1rem 1rem; }
-        .menu__grid__case .validation__box i {
+        .menu__grid__case .validation__du__box i {
           font-size: 20px;
           color: white;
           transform: rotate(180deg);
