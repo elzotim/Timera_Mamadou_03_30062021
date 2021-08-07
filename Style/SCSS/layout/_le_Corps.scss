@@ -140,7 +140,7 @@
 
  
 
-.restaurant__block-name{
+.restaurant__block-nom{
     font-weight:initial;
 }
 
@@ -154,5 +154,7 @@
     flex-direction : row;
     justify-content : space-between;
     width: 100%;
-    }
+    max-width: 1600px;
 }
+    }
+

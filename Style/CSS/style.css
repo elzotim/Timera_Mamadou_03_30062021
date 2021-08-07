@@ -1,24 +1,23 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   background: #f6f6f6; }
+
+.Bloc_page {
+  justify-content: center;
+  margin: 0 auto;
+  display: block; }
 
 * a {
   text-decoration: none;
   color: inherit; }
 
-.Bloc_page {
-  max-width: 1600px;
-  justify-content: center;
-  margin: 0 auto;
-  display: block; }
-
 .chargement {
   border: 10px solid #f3f3f3;
   height: 50px;
   width: 50px;
-  border-top: 10px solid #9356DC;
-  border-bottom: 10px solid #FF79DA;
+  border-top: 10px solid #9356dc;
+  border-bottom: 10px solid #ff79da;
   border-radius: 50% 0% 50% 0%;
   margin: auto;
   position: absolute;
@@ -73,7 +72,7 @@ body {
     visibility: hidden; } }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   background: #f6f6f6; }
 
@@ -102,7 +101,7 @@ header {
       header .header__arrow-back a {
         color: #000; }
     header .header__logo {
-      font-family: 'Shrikhand', cursive;
+      font-family: "Shrikhand", cursive;
       margin: 0; }
       header .header__logo a {
         color: #000; }
@@ -128,14 +127,14 @@ header {
   width: 100%;
   max-width: 1230px;
   border-radius: 30px 30px 0 0;
-  background-color: #F6F6F6; }
+  background-color: #f6f6f6; }
   .menu__header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between; }
     .menu__header__title {
-      font-family: 'Shrikhand', cursive; }
+      font-family: "Shrikhand", cursive; }
     .menu__header__heart .heart {
       width: 30px;
       stroke-width: 25px;
@@ -158,12 +157,12 @@ header {
     .menu__grid__bloc {
       display: grid;
       grid-gap: 15px; }
-    .menu__grid__title h3 {
+    .menu__grid__titre h3 {
       position: relative;
       font-weight: 400;
       text-transform: uppercase; }
-      .menu__grid__title h3::after {
-        content: '';
+      .menu__grid__titre h3::after {
+        content: "";
         width: 50px;
         height: 4px;
         background: #99e2d0;
@@ -192,39 +191,38 @@ header {
         display: flex;
         margin-right: 0rem; }
       .menu__grid__case:hover .menu__case__price {
-        padding-right: 70px;
         transition: 0.5s ease; }
       .menu__grid__case .validation__box {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #99E2D0;
+        background: #99e2d0;
         border-radius: 0 15px 15px 0;
         padding: 0 24px;
         height: 100%;
-        transition-duration: .5s;
+        transition-duration: 0.5s;
         margin: -1rem -5rem -1rem 1rem; }
         .menu__grid__case .validation__box i {
           font-size: 20px;
           color: white;
           transform: rotate(180deg);
           animation: rotate 0.5s both; }
-  .menu__case__dish {
+  .menu__case__prix {
     margin-left: 20px;
     white-space: nowrap;
     overflow: hidden; }
-    .menu__case__dish p {
+    .menu__case__prix p {
       margin: 0;
       text-overflow: ellipsis;
       overflow: hidden; }
-    .menu__case__dish-title {
+    .menu__case__prix-title {
       font-weight: bold; }
   .menu__case__price {
     padding-right: 20px;
     font-weight: bold;
     padding-left: 7px; }
 
-.dish-and-price {
+.plat-et-prix {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -294,7 +292,7 @@ header {
     width: 100%;
     max-width: 1200px; }
     .footer__bloc .logo {
-      font-family: 'Shrikhand', cursive;
+      font-family: "Shrikhand", cursive;
       color: white;
       font-size: 20px;
       padding: 15px 0; }
@@ -340,7 +338,7 @@ header {
   display: block;
   margin: auto;
   opacity: 1;
-  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   color: white;
   border-radius: 200px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
@@ -499,7 +497,7 @@ header {
     padding: 20px 0;
     box-shadow: 1px 5px 10px 3px #bebcbc; }
   .Bloc_Menu__nombre {
-    background-color: #9356DC;
+    background-color: #9356dc;
     color: white;
     position: absolute;
     padding: 1px 6px 1px 6px;
@@ -584,7 +582,7 @@ header {
       font-weight: 700;
       margin-bottom: 7px; }
 
-.restaurant__block-name {
+.restaurant__block-nom {
   font-weight: initial; }
 
 @media (min-width: 600px) {
@@ -597,4 +595,5 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%; } }
+    width: 100%;
+    max-width: 1600px; } }

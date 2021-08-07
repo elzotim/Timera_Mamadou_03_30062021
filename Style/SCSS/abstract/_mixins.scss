@@ -1,77 +1,63 @@
-
-
-
-
-
 @mixin flexbox-center {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  @mixin button-hover {
+}
+
+@mixin button-hover {
     opacity: 0.8;
     cursor: pointer;
-    transition: .3s;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6);    
-  }
-  
-  @mixin button-style {
-    opacity: 1;
-    background: $gradient;
-    color: white;
-    padding: 0 20px;
-    border-radius: 200px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);  
-  }
-  
- 
-  
-@mixin centrer_element {
-    display :flex;
-    justify-content: center;
-    align-items :center;
-}
-
-@mixin boutton-hover {
-    opacity:1;
-    transition : 2s;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6); ; 
-}
-@mixin buton_verte{
-    color: #1b6150;
-    padding: 7px 10px;
-    margin: 0;
-
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
 }
 
 @mixin button-style {
     opacity: 1;
     background: $gradient;
-    color :white;
-    padding : 40 20px;
-    border-radius :200px;
-    box-shadow : 0px 0px 10px 0px rgba(0,0,0,0.3);  
+    color: white;
+    padding: 0 20px;
+    border-radius: 200px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+@mixin centrer_element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin boutton-hover {
+    opacity: 1;
+    transition: 2s;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}
+@mixin buton_verte {
+    color: #1b6150;
+    padding: 7px 10px;
+    margin: 0;
+}
+
+@mixin button-style {
+    opacity: 1;
+    background: $gradient;
+    color: white;
+    padding: 40 20px;
+    border-radius: 200px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 @mixin responsive_tablette {
-    @media(
-        min-width: 500px){
+    @media (min-width: 500px) {
         @content;
     }
-    
 }
 @mixin responsive_Desktop {
-    @media(
-        min-width: 900px){
+    @media (min-width: 900px) {
         @content;
     }
-    
 }
 @mixin responsive_tablete {
-    @media(
-        min-width: 600px){
+    @media (min-width: 600px) {
         @content;
     }
-    
 }
