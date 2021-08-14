@@ -346,11 +346,10 @@ header {
   width: max-content; }
 
 .le__boutton:hover {
-  opacity: 1;
-  transition: 2s;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  opacity: 0.7;
   cursor: pointer;
-  opacity: 0.7; }
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6); }
 
 .button {
   margin: 60px auto 98px auto;
@@ -584,7 +583,7 @@ header {
 .restaurant__block-nom {
   font-weight: initial; }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   .le__tout {
     margin: 0 auto;
     width: 600px; } }

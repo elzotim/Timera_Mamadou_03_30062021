@@ -16,7 +16,7 @@ header {
   .header {
     box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
     position: relative;
-    @include flexbox-center();
+    @include centrer_element();
     width: 100%;
     &__arrow-back {
       width: 50px;
@@ -52,7 +52,7 @@ header {
 #menu {
   background: white;
   width: 100%;
-  @include flexbox-center;
+  @include centrer_element;
 }
 
 .menu {
@@ -130,7 +130,7 @@ header {
       background-color: white;
       box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
       &:hover .validation__du__box {
-        @include flexbox-center;
+        @include centrer_element;
         animation: slide-left 0.5s ease;
         transform-origin: right;
         display: flex;
@@ -141,7 +141,7 @@ header {
         transition: 0.5s ease;
       }
       .validation__du__box {
-        @include flexbox-center;
+        @include centrer_element;
         background: $color-tertiary;
         border-radius: 0 15px 15px 0;
         padding: 0 24px;
@@ -261,7 +261,7 @@ header {
 .footer {
   width: 100%;
   background-color: #353535;
-  @include flexbox-center;
+  @include centrer_element;
   &__bloc {
     padding: 0 40px;
     width: 100%;
